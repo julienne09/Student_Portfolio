@@ -13,7 +13,7 @@ if page == "Home":
     st.title("🧑‍🎓 Student Profile")
     
     # Display the default image (without allowing an upload)
-    st.image("juju.jpg", width=150, caption="Default image", use_column_width=False)
+    st.image("juju.jpg", width=50, caption="Default image")
 
     # Disable file upload to prevent changing the image
     st.warning("🔒 Profile picture is set by default and cannot be changed.")
