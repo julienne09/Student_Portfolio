@@ -11,8 +11,14 @@ page = st.sidebar.radio("Go to", ["Home", "Projects", "Skills", "Testimonials", 
 # Home section
 if page == "Home":
     st.title("🧑‍🎓 Student Profile")
+    
+    # Display the default image (without allowing an upload)
     st.image("juju.jpg", width=150, caption="Default image", use_column_width=False)
-    name = st.text_input("Your Name", "DUSHIMIMANA Julienne")
+
+    # Disable file upload to prevent changing the image
+    st.warning("🔒 Profile picture is set by default and cannot be changed.")
+
+    name = st.text_input("Your Name", "DUSHIMIMANA Julienne", disabled=True)
     location = st.text_input("Location", "Musanze")
     field_of_study = st.text_input("Field of Study", "Computer Science / Software Engineering Year 3")
     university = st.text_input("University", "INES-Ruhengeri")
