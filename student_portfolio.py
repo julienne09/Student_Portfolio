@@ -11,7 +11,7 @@ page = st.sidebar.radio("Go to", ["Home", "Projects", "Skills", "Testimonials", 
 # Home section
 if page == "Home":
     st.title("🧑‍🎓 Student Profile")
-    st.image("juju.jpg", width=150, caption="Default image")
+    st.image("juju.jpg", width=150, caption="Default image", use_column_width=False)
     name = st.text_input("Your Name", "DUSHIMIMANA Julienne")
     location = st.text_input("Location", "Musanze")
     field_of_study = st.text_input("Field of Study", "Computer Science / Software Engineering Year 3")
