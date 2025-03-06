@@ -111,8 +111,8 @@ elif page == "Projects":
 
     for project, details in filtered_projects.items():
         with st.expander(project, expanded=False):
-            st.write(f"**Type:** {details['type']}")
-            st.write(f"**Description:** {details['description']}")
+            st.write(f"*Type:* {details['type']}")
+            st.write(f"*Description:* {details['description']}")
             if details.get("link"):
                 st.markdown(f"[🔗 Link to Code]({details['link']})")
 
@@ -143,7 +143,7 @@ elif page == "Testimonials":
     st.title("🗣 Student Testimonials")
 
     st.subheader("💬 Testimonial:")
-    st.write("*Julienne is a brilliant problem solver! Her final year project is truly innovative. – Mclement*")
+    st.write("Julienne is a brilliant problem solver! Her final year project is truly innovative. – Mclement")
     st.write("🌟 An AI Programmer, always eager to learn and contribute! – Mclement")
 
     st.markdown("---")
